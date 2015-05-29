@@ -1,0 +1,318 @@
+<link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/hc-assets/css/barkers.css" />
+<style type="text/css">
+    div#barker_container {
+      background-image: url('http://www.trbimg.com/img-5564c277/turbine/ctn-restaurant-barker-background');
+      background-repeat: none;
+      height:200px;
+      overflow:hidden;
+    }
+    div#hed_dropdown h1 a:hover.view_more{
+      color:#ccc;
+    }
+    select#category,select#town{
+      margin-bottom:10px;
+      margin-right:10px;
+      width: calc(100% - 45px);
+    }
+    @media only screen and (min-width: 480px){
+      div#barker_container{
+
+      }
+      select#category,select#town{
+        width: calc(40% - 10px);
+        float:left;
+      }
+      button[type="submit"]{
+        width:20%;float:left;
+      }
+    }
+</style>
+
+<div class="group" id="barker_container">
+  <div id="hed_dropdown" class="clear">
+    <h1>
+        <a href="http://events.ctnow.com/places/types:1" target="_parent">Find Restaurants</a>
+        <a href="http://events.ctnow.com/places/types:1" target="_parent" class="view_more"> View All &gt;</a>
+    </h1>
+  </div>
+    <div id="barker">
+        <select id="category" class="form-control input-sm" name="category" >
+          <option value="">Category</option>
+          <option value="All">All</option>
+          <option value="83">Pizza</option>
+          <option value="88">Italian</option>
+          <option value="71">American</option>
+          <option value="376">Fast Food</option>
+          <option value="417">Ice Cream</option>
+          <option value="101">Chinese</option>
+          <option value="89">Cafes</option>
+          <option value="379">Seafood</option>
+          <option value="403">Bar &amp; Grill</option>
+          <option value="375">Mexican</option>
+          <option value="390">Coffee House</option>
+          <option value="373">Bakery</option>
+          <option value="374">Catering</option>
+          <option value="410">Diner</option>
+          <option value="73">Burgers</option>
+          <option value="377">Japanese</option>
+          <option value="384">Sandwiches</option>
+          <option value="453">Live Music</option>
+          <option value="433">Pub Food</option>
+          <option value="380">Delicatessen</option>
+          <option value="386">Thai</option>
+          <option value="443">Vegetarian/Vega</option>
+          <option value="93">Bagels/Donuts</option>
+          <option value="387">Breakfast</option>
+          <option value="75">Lounges</option>
+          <option value="400">Sushi</option>
+          <option value="394">Steak House</option>
+          <option value="172">Sports Bars</option>
+          <option value="421">Korean</option>
+          <option value="402">Indian</option>
+          <option value="445">Outdoor Seating</option>
+          <option value="85">Barbecue/Cajun</option>
+          <option value="423">Latin American</option>
+          <option value="447">Casual Dining</option>
+          <option value="105">Wine Bars</option>
+          <option value="454">Happy Hour</option>
+          <option value="425">Mediterranean</option>
+          <option value="452">Tapas</option>
+          <option value="449">Fine Dining</option>
+          <option value="426">Middle Eastern</option>
+          <option value="439">Spanish</option>
+          <option value="72">Pubs</option>
+          <option value="378">Greek</option>
+          <option value="86">Irish</option>
+          <option value="498">Organic</option>
+          <option value="404">Bistro</option>
+          <option value="90">Dessert</option>
+          <option value="413">Kid Friendly</option>
+          <option value="389">Buffet</option>
+          <option value="416">French</option>
+          <option value="446">Brunch</option>
+          <option value="482">Irish Pub</option>
+          <option value="458">Seasonal Cuisine</option>
+          <option value="499">Local</option>
+          <option value="432">Portuguese</option>
+          <option value="92">Caribbean</option>
+          <option value="385">Vietnamese</option>
+          <option value="419">Jamaican</option>
+          <option value="434">Puerto Rican</option>
+          <option value="431">Polish</option>
+          <option value="468">Online Ordering</option>
+          <option value="430">Peruvian</option>
+          <option value="471">Comedy Venues</option>
+          <option value="470">Pan Asian</option>
+          <option value="408">Jazz &amp; Blues</option>
+          <option value="457">Patio Bars</option>
+          <option value="409">Karaoke Bars</option>
+          <option value="526">Community Venue</option>
+          <option value="102">Billiards</option>
+          <option value="99">Dance Clubs</option>
+          <option value="87">Gay Bars</option>
+          <option value="473">Colombian</option>
+          <option value="501">Mobile Food Truck</option>
+          <option value="472">Microbreweries</option>
+          <option value="32">Performance Venues</option>
+          <option value="248">Cuban</option>
+          <option value="97">Golf Courses</option>
+          <option value="455">Art Galleries</option>
+          <option value="49">Wedding Receptions</option>
+          <option value="10">Clothing &amp; Accesories</option>
+          <option value="12">Art, Retail</option>
+          <option value="486">Wine and Liquor Stores</option>
+          <option value="407">Dive Bars</option>
+          <option value="412">Ethiopian</option>
+          <option value="424">Lebanese</option>
+          <option value="478">German</option>
+          <option value="381">Brazilian</option>
+          <option value="406">Adult Entertainment</option>
+          <option value="500">Kosher</option>
+        </select>
+        <select id="town" class="form-control input-sm" name="town">
+          <option>Choose Your Town</option>
+          <option value="andover">Andover</option>
+          <option value="ansonia">Ansonia</option>
+          <option value="ashford">Ashford</option>
+          <option value="avon">Avon</option>
+          <option value="barkhamsted">Barkhamsted</option>
+          <option value="beacon%20falls">Beacon Falls</option>
+          <option value="berlin">Berlin</option>
+          <option value="bethany">Bethany</option>
+          <option value="bethel">Bethel</option>
+          <option value="bethlehem">Bethlehem</option>
+          <option value="bloomfield">Bloomfield</option>
+          <option value="bolton">Bolton</option>
+          <option value="bozrah">Bozrah</option>
+          <option value="branford">Branford</option>
+          <option value="bridgeport">Bridgeport</option>
+          <option value="bridgewater">Bridgewater</option>
+          <option value="bristol">Bristol</option>
+          <option value="brookfield">Brookfield</option>
+          <option value="brooklyn">Brooklyn</option>
+          <option value="burlington">Burlington</option>
+          <option value="canaan">Canaan</option>
+          <option value="canterbury">Canterbury</option>
+          <option value="canton">Canton</option>
+          <option value="chaplin">Chaplin</option>
+          <option value="cheshire">Cheshire</option>
+          <option value="chester">Chester</option>
+          <option value="clinton">Clinton</option>
+          <option value="colchester">Colchester</option>
+          <option value="colebrook">Colebrook</option>
+          <option value="columbia">Columbia</option>
+          <option value="cornwall">Cornwall</option>
+          <option value="coventry">Coventry</option>
+          <option value="cromwell">Cromwell</option>
+          <option value="danbury">Danbury</option>
+          <option value="darien">Darien</option>
+          <option value="deep%20river">Deep River</option>
+          <option value="derby">Derby</option>
+          <option value="durham">Durham</option>
+          <option value="east%20granby">East Granby</option>
+          <option value="east%20haddam">East Haddam</option>
+          <option value="east%20hampton">East Hampton</option>
+          <option value="east%20hartford">East Hartford</option>
+          <option value="east%20haven">East Haven</option>
+          <option value="east%20lyme">East Lyme</option>
+          <option value="east%20windsor">East Windsor</option>
+          <option value="eastford">Eastford</option>
+          <option value="easton">Easton</option>
+          <option value="ellington">Ellington</option>
+          <option value="enfield">Enfield</option>
+          <option value="essex">Essex</option>
+          <option value="fairfield">Fairfield</option>
+          <option value="farmington">Farmington</option>
+          <option value="franklin">Franklin</option>
+          <option value="glastonbury">Glastonbury</option>
+          <option value="goshen">Goshen</option>
+          <option value="granby">Granby</option>
+          <option value="greenwich">Greenwich</option>
+          <option value="griswold">Griswold</option>
+          <option value="groton">Groton</option>
+          <option value="guilford">Guilford</option>
+          <option value="haddam">Haddam</option>
+          <option value="hamden">Hamden</option>
+          <option value="hampton">Hampton</option>
+          <option value="hartford">Hartford</option>
+          <option value="hartland">Hartland</option>
+          <option value="harwinton">Harwinton</option>
+          <option value="hebron">Hebron</option>
+          <option value="kent">Kent</option>
+          <option value="killingly">Killingly</option>
+          <option value="killingworth">Killingworth</option>
+          <option value="lebanon">Lebanon</option>
+          <option value="ledyard">Ledyard</option>
+          <option value="lisbon">Lisbon</option>
+          <option value="litchfield">Litchfield</option>
+          <option value="lyme">Lyme</option>
+          <option value="madison">Madison</option>
+          <option value="manchester">Manchester</option>
+          <option value="mansfield">Mansfield</option>
+          <option value="marlborough">Marlborough</option>
+          <option value="meriden">Meriden</option>
+          <option value="middlebury">Middlebury</option>
+          <option value="middlefield">Middlefield</option>
+          <option value="middletown">Middletown</option>
+          <option value="milford">Milford</option>
+          <option value="monroe">Monroe</option>
+          <option value="montville">Montville</option>
+          <option value="morris">Morris</option>
+          <option value="naugatuck">Naugatuck</option>
+          <option value="newington">Newington</option>
+          <option value="newtown">Newtown</option>
+          <option value="new%20britain">New Britain</option>
+          <option value="new%20canaan">New Canaan</option>
+          <option value="new%20fairfield">New Fairfield</option>
+          <option value="new%20hartford">New Hartford</option>
+          <option value="new%20haven">New Haven</option>
+          <option value="new%20london">New London</option>
+          <option value="new%20milford">New Milford</option>
+          <option value="norfolk">Norfolk</option>
+          <option value="north%20branford">North Branford</option>
+          <option value="north%20canaan">North Canaan</option>
+          <option value="north%20haven">North Haven</option>
+          <option value="north%20stonington">North Stonington</option>
+          <option value="norwalk">Norwalk</option>
+          <option value="norwich">Norwich</option>
+          <option value="old%20lyme">Old Lyme</option>
+          <option value="old%20saybrook">Old Saybrook</option>
+          <option value="orange">Orange</option>
+          <option value="oxford">Oxford</option>
+          <option value="plainfield">Plainfield</option>
+          <option value="plainville">Plainville</option>
+          <option value="plymouth">Plymouth</option>
+          <option value="pomfret">Pomfret</option>
+          <option value="portland">Portland</option>
+          <option value="preston">Preston</option>
+          <option value="prospect">Prospect</option>
+          <option value="putnam">Putnam</option>
+          <option value="redding">Redding</option>
+          <option value="ridgefield">Ridgefield</option>
+          <option value="rocky%20hill">Rocky Hill</option>
+          <option value="roxbury">Roxbury</option>
+          <option value="salem">Salem</option>
+          <option value="salisbury">Salisbury</option>
+          <option value="scotland">Scotland</option>
+          <option value="seymour">Seymour</option>
+          <option value="sharon">Sharon</option>
+          <option value="shelton">Shelton</option>
+          <option value="sherman">Sherman</option>
+          <option value="simsbury">Simsbury</option>
+          <option value="somers">Somers</option>
+          <option value="south%20windsor">South Windsor</option>
+          <option value="southbury">Southbury</option>
+          <option value="southington">Southington</option>
+          <option value="sprague">Sprague</option>
+          <option value="stafford">Stafford</option>
+          <option value="stamford">Stamford</option>
+          <option value="sterling">Sterling</option>
+          <option value="stonington">Stonington</option>
+          <option value="stratford">Stratford</option>
+          <option value="suffield">Suffield</option>
+          <option value="thomaston">Thomaston</option>
+          <option value="thompson">Thompson</option>
+          <option value="tolland">Tolland</option>
+          <option value="torrington">Torrington</option>
+          <option value="trumbull">Trumbull</option>
+          <option value="union">Union</option>
+          <option value="vernon">Vernon</option>
+          <option value="voluntown">Voluntown</option>
+          <option value="wallingford">Wallingford</option>
+          <option value="warren">Warren</option>
+          <option value="washington">Washington</option>
+          <option value="waterbury">Waterbury</option>
+          <option value="waterford">Waterford</option>
+          <option value="watertown">Watertown</option>
+          <option value="west%20hartford">West Hartford</option>
+          <option value="west%20haven">West Haven</option>
+          <option value="westbrook">Westbrook</option>
+          <option value="weston">Weston</option>
+          <option value="westport">Westport</option>
+          <option value="wethersfield">Wethersfield</option>
+          <option value="willington">Willington</option>
+          <option value="wilton">Wilton</option>
+          <option value="winchester">Winchester</option>
+          <option value="windham">Windham</option>
+          <option value="windsor">Windsor</option>
+          <option value="windsor%20locks">Windsor Locks</option>
+          <option value="wolcott">Wolcott</option>
+          <option value="woodbridge">Woodbridge</option>
+          <option value="woodbury">Woodbury</option>
+          <option value="woodstock">Woodstock</option>
+        </select> 
+        <input id="submit" class="btn btn-ctnow" type="submit" value="Search">
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+
+$("#submit").click(function(){
+  //get dropdown values and build url
+  category = $("#category").val();
+  town = $("#town").val();
+  window.location.href = "http://events.ctnow.com/places/categories:" + category + "/city:" + town;
+  //window.open("http://events.ctnow.com/places/categories:" + category + "/city:" + town);
+});
+
+</script>
